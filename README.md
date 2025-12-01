@@ -30,8 +30,8 @@ O layout foi construído inicialmente para dispositivos móveis e depois adaptad
 
 ## 🖼️ Prévia do projeto
 <div style="display: flex; gap: 10px;">
-  <img src="https://github.com/DaviFalcaoWeb/Social-Proof-section/blob/main/images/preview-mobile.png?raw=true" alt="Mobile" width="200">
-  <img src="https://github.com/DaviFalcaoWeb/Social-Proof-section/blob/main/images/preview-desktop.png?raw=true" alt="Desktop" width="400">
+  <img src="https://github.com/DaviFalcaoWeb/Social-Proof-section/blob/main/images/preview-mobile.png?raw=true" alt="Mobile" width="73px">
+  <img src="https://github.com/DaviFalcaoWeb/Social-Proof-section/blob/main/images/preview-desktop.png?raw=true" alt="Desktop" width="500px">
 </div>
 
 
