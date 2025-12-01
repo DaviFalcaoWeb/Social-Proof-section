@@ -1,0 +1,107 @@
+/*Redimensionamento para telas de até 768px*/
+@media screen and (min-width: 768px) {
+
+    /*redimensionamento e ajustes do main da página*/
+    .container__wrapper {
+        display: grid;
+        grid-template-areas:
+            "intro rating"
+            "reviews reviews";
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem 1.5rem;
+    }
+
+    /*ajustes da seção de introdução*/
+    .container__intro {
+        grid-area: intro;
+        text-align: start;
+    }
+
+    .container__intro .intro__title {
+        font-size: 2.5rem;
+        max-width: 70%;
+    }
+
+    .container__intro .intro__description {
+        font-size: 1.1rem;
+        max-width: 80%;
+    }
+
+    /*Pequenos ajustes da seção de avaliações dos clientes*/
+    .container__rating {
+        grid-area: rating;
+    }
+
+    .container__rating .rating__item {
+        flex-direction: row;
+        max-width: 400px;
+    }
+
+    .container__rating .rating__item .rating__label {
+        margin-top: 0.3rem;
+    }
+
+    /*Pequeno ajuste na seção de reviews dos clientes*/
+    .container__reviews {
+        grid-area: reviews;
+    }
+}
+
+/*Redimensionamento para telas de até 1024px*/
+@media screen and (min-width: 1024px) {
+
+    /*ajustes e redimensionamento do main da página para telas maiores*/
+    .container__wrapper {
+        grid-template-columns: minmax(300px, 530px) 1fr;
+        margin: 0 auto;
+    }
+
+    .container__intro .intro__title {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+
+    /*Efeito de escada na seção de avaliações de clientes*/
+    .container__rating .rating__item:nth-child(1) {
+        align-self: flex-start;
+    }
+
+    .container__rating .rating__item:nth-child(2) {
+        align-self: center;
+    }
+
+    .container__rating .rating__item:nth-child(3) {
+        align-self: flex-end;
+    }
+
+    /*Ajustes e redimensionamento da seção de reviews dos clientes*/
+    .container__reviews {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .container__reviews .reviews__user {
+        height: 230px;
+        max-width: 340px;
+        padding: 2rem;
+    }
+
+    .container__reviews .reviews__user:nth-child(2) {
+        margin-top: 2rem;
+    }
+
+    .container__reviews .reviews__user:nth-child(3) {
+        margin-top: 4rem;
+    }
+}
+
+/*Rediomensionamento e ajustes para telas de até 1440px*/
+@media screen and (min-width: 1440px) {
+
+    /*Pequenos redimensionamentos para telas maiores da seção de introdução*/
+    .container__intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

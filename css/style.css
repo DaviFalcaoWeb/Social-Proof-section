@@ -1,0 +1,137 @@
+/*Pré-configs gerais da página*/
+:root {
+    /*Cores principais*/
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    /*Cores neutras*/
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.container__intro .intro__title,
+.container__rating .rating__item .rating__label {
+    font-weight: 700;
+}
+
+/*Configurações do main da página*/
+.container__wrapper {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+/*Estilizações e configurações da seção de introdução da página*/
+.container__intro {
+    text-align: center;
+}
+
+.container__intro .intro__title {
+    font-size: 2.4rem;
+    line-height: 2rem;
+    color: var(--Very-Dark-Magenta);
+    margin: 1rem 0;
+}
+
+.container__intro .intro__description {
+    font-size: 1rem;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+/*Configurações da seção de avaliações da página*/
+.container__rating {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+/*Estilização dos cards de avaliação dos clientes*/
+.container__rating .rating__item {
+    background-color: var(--Light-Grayish-Magenta);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.container__rating .rating__item .rating__stars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.container__rating .rating__item .rating__label {
+    font-size: 1rem;
+    color: var(--Very-Dark-Magenta);
+}
+
+/*Configurações da seção de reviews dos clientes*/
+.container__reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container__reviews .reviews__user {
+    background-color: var(--Very-Dark-Magenta);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/*Ajustes e estilização da área de informações sobre o cliente*/
+.container__reviews .reviews__user .user__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container__reviews .reviews__user .user__profile .user__image {
+    width: 2.5rem;
+}
+
+.container__reviews .reviews__user .user__profile .user__image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.container__reviews .reviews__user .user__profile .user__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__reviews .reviews__user .user__profile .user__info .user__name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.container__reviews .reviews__user .user__profile .user__info .user__status {
+    font-size: 0.95rem;
+    color: var(--Soft-Pink);
+}
+
+/*Estilização da área do review escrito pelo cliente*/
+.container__reviews .reviews__user .user__comment {
+    font-size: 1rem;
+    text-indent: 0.3rem;
+    color: white;
+}
