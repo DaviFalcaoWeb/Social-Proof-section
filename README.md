@@ -1,4 +1,4 @@
-# Social Proof Section — Frontend Mentor
+# 📌 Social Proof Section — Frontend Mentor
 
 **Este projeto foi desenvolvido a partir de um desafio do Frontend Mentor, utilizando HTML, CSS e seguindo a abordagem Mobile-First.  
 O objetivo foi praticar estruturação semântica, responsividade e organização de layout.**
